@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/game.css">
+  <script defer src="../js/game.js"></script>
+  <title>Memory Game</title>
+</head>
+<body>
+  <main>
+    <header>
+      <button class="back" onclick="window.location.href='../index.html'">Back</button>
+      <span class="player"></span>
+      <span>Tempo: <span class="timer">00</span></span>
+      <button class="pause" type="button" onclick="pauseGame()">Pause</button>
+      <button class="resume" type="button" onclick="resumeGame()">Resume</button>
+      <button class="restart" onclick="restartGame()">Restart</button>
+    </header>
+    <div class="grid"></div>
+  </main>
+</body>
+</html>

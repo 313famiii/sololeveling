@@ -1,0 +1,98 @@
+.left-container {
+    position: absolute;
+    top: 50%; 
+    left: 0; 
+    transform: translateY(-50%);
+    width: 400px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    border-color:mediumpurple;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+
+.user-table {
+  width: 100%; 
+  border-collapse: collapse;
+}
+  
+.user-table th,.user-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left; 
+}
+  
+.user-table th {
+  background-color: #eee;
+}
+  
+.user-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+  
+  
+.button-container {
+  margin-top: 20px;
+  text-align: left; 
+}
+  
+.button-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px;
+  display: inline-block; 
+}
+  
+.update-button {
+  background-color: #4CAF50;
+  color: #fff;
+}
+  
+.update-button:hover {
+  background-color: #3e8e41;
+}
+  
+.delete-button {
+  background-color: #b6132e;
+  color: #fff;
+}
+  
+.delete-button:hover {
+  background-color: #752222;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+  
+.user-table th, .user-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+  
+.user-table tr:nth-child(1) td:first-child {
+  color: gold;
+  font-weight: bold;
+}
+  
+.user-table tr:nth-child(2) td:first-child {
+  color: silver;
+  font-weight: bold;
+}
+  
+.user-table tr:nth-child(3) td:first-child {
+  color: #cd7f32; /* Bronze */
+  font-weight: bold;
+}
+  
+.user-table th:first-child, .user-table td:first-child {
+  text-align: center;
+}  

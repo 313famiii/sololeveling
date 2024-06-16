@@ -1,0 +1,147 @@
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: url('../images/bg.png');
+  background-size: cover;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px 50px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2em;
+  width: 100%;
+  max-width: 800px;
+  padding: 30px;
+  margin: 0 0 30px;
+  border-radius: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  aspect-ratio: 3/4;
+  width: 90%;
+  border-radius: 5px;
+  position: relative;
+  transition: all 350ms ease;
+  transform-style: preserve-3d;
+  background-color: #ccc;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #854481;
+  border-radius: 5px;
+  transition: all 400ms ease;
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
+.back {
+  background-image: url('../images/back.png');
+  backface-visibility: hidden;
+}
+
+.reveal-card {
+  transform: rotateY(180deg);
+}
+
+.disabled-card {
+  filter: saturate(0);
+  opacity: 0.5;
+}
+
+@media screen and (max-width:920px) {
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+
+  }
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+.back {
+  margin-right: 10px;
+  color: white;
+}
+
+.restart {
+  margin-left: 10px;
+}
+
+.pause {
+  margin-left: 10px;
+}
+
+.resume {
+  margin-left: 10px;
+}
+
+header {
+  background-color: #7246da;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2em;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 0 30px;
+  border-radius: 5px;
+}
+
+
+header span {
+  margin: 0 10px;
+}
+
+.pause-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.paused {
+  pointer-events: none; /* Disable click events on grid when paused */
+}
