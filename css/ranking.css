@@ -48,18 +48,18 @@
   margin: 0 10px;
   display: inline-block; 
 }
-  
-.delete-button {
-  background-color: #00ff00;
+    
+.update-button {
+  background-color: #b6132e;
   color: #fff;
 }
-  
+
 .update-button:hover {
   background-color: #009900;
 }
 
-.update-button {
-  background-color: #b6132e;
+.delete-button {
+  background-color: #00ff00;
   color: #fff;
 }
   
