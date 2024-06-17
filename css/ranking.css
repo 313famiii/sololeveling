@@ -50,10 +50,17 @@
 }
   
 .delete-button {
+  background-color: #00ff00;
+  color: #fff;
+}
+  
+.update-button:hover {
+  background-color: #009900;
+}
+
+.update-button {
   background-color: #b6132e;
   color: #fff;
-  width: 95%;
-  align-items: center;  
 }
   
 .delete-button:hover {
